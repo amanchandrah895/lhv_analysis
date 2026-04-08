@@ -1,0 +1,68 @@
+================================================================================
+PAPER RESULTS — Project 1: Language as a Hidden Variable
+================================================================================
+
+DESCRIPTIVE RESULTS:
+- Mean BDS1 (EN-HI): 0.2249 +/- 0.2460
+- Mean BDS1 (EN-FR): 0.2640 +/- 0.2912
+- Mean BDS1 by category (EN-HI): FACTUAL=0.2194 NORMATIVE=0.2387 SAFETY=0.2167
+- Mean BDS1 by category (EN-FR): FACTUAL=0.3651 NORMATIVE=0.1312 SAFETY=0.2958
+- Mean BDS_full (EN-HI): 0.1900
+- Mean BDS_full (EN-FR): 0.2213
+
+H1 RESULT (Safety vs Factual):
+- Test used: Mann-Whitney U
+- Statistic: 193.5, p-value: 0.575672
+- Effect size (Cohen's d): -0.0106
+- H1 SUPPORTED: NO
+
+H2 RESULT (Hindi > French divergence):
+- Overall paired test p-value: 0.326714
+- Mean BDS1 EN-HI: 0.2249, Mean BDS1 EN-FR: 0.2640
+- FACTUAL: NO
+- NORMATIVE: NO
+- SAFETY: NO
+- H2 SUPPORTED: NO
+
+H3 RESULT (Model consistency):
+- Model consistency (EN-HI): Pearson r=-0.1263, Mean |diff|=0.2464, Supported=NO
+- Model consistency (EN-FR): Pearson r=-0.102, Mean |diff|=0.322, Supported=NO
+
+VARIANCE BASELINE:
+- Mean intra-EN variance: 0.128748
+- Mean EN-HI BDS1: 0.2249
+- Ratio: 1.7x larger than noise floor
+
+REFUSAL ANALYSIS:
+- Overall refusal rate EN: 10.0%
+- Overall refusal rate HI: 11.7%
+- Overall refusal rate FR: 11.7%
+- Safety category refusal mismatch rate EN-HI: 10.0%
+- Safety category refusal mismatch rate EN-FR: 10.0%
+
+SENTIMENT DIVERGENCE:
+- Mean S_sent (EN-HI): 0.1696
+- Mean S_sent (EN-FR): 0.2197
+- Category with highest sentiment divergence: NORMATIVE
+
+SANITY CHECK:
+SBERT vs LLM Judgment Sanity Check
+Spearman r: 0.7273
+p-value: 0.0006
+Valid comparisons: 18
+Validity: CONFIRMED
+
+COHEN'S KAPPA (refusal annotation):
+Cohen's Kappa: 1.0000
+Agreement level: ALMOST PERFECT
+Number of labeled responses: 180
+Target >= 0.7: ACHIEVED
+
+TRANSLATION QUALITY:
+- Mean Hindi BLEU: 0.6792
+- Mean French BLEU: 0.7012
+- Flagged prompts (BLEU < 0.6): ['F07', 'N03', 'N04', 'N07', 'N08', 'N09', 'N10', 'S01', 'S02', 'S03', 'S04', 'S05', 'S08', 'S09', 'S10']
+
+================================================================================
+END OF PAPER RESULTS
+================================================================================

@@ -1,0 +1,11 @@
+hypothesis,comparison,test,statistic,p_value,cohens_d,supported,mean_safety,mean_factual
+H1,SAFETY vs FACTUAL (EN-HI),Mann-Whitney U,193.5,0.575672,-0.0106,NO,0.2167,0.2194
+H1-sub,NORMATIVE vs FACTUAL (EN-HI),Mann-Whitney U,211.0,0.388175,0.0769,NO,0.2387,0.2194
+H1,SAFETY vs FACTUAL (EN-FR),Mann-Whitney U,170.0,0.795939,-0.2048,NO,0.2958,0.3651
+H1-sub,NORMATIVE vs FACTUAL (EN-FR),Mann-Whitney U,127.5,0.975852,-0.8964,NO,0.1312,0.3651
+H2,EN-HI vs EN-FR (FACTUAL),Paired t-test,-1.8359,0.08208,-0.4664,NO,0.2194,0.3651
+H2,EN-HI vs EN-FR (NORMATIVE),Paired t-test,1.8712,0.076794,0.5848,NO,0.2387,0.1312
+H2,EN-HI vs EN-FR (SAFETY),Paired t-test,-1.4126,0.173939,-0.2819,NO,0.2167,0.2958
+H2,EN-HI vs EN-FR (ALL),Paired t-test,-0.989,0.326714,-0.145,NO,0.2249,0.264
+H3,Model consistency (EN-HI),Pearson r,-0.1263,0.506011,0.2464,NO,,
+H3,Model consistency (EN-FR),Pearson r,-0.102,0.591783,0.322,NO,,

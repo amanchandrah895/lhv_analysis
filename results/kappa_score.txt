@@ -1,0 +1,4 @@
+Cohen's Kappa: 1.0000
+Agreement level: ALMOST PERFECT
+Number of labeled responses: 180
+Target >= 0.7: ACHIEVED
